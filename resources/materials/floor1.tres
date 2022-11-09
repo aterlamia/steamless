@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dd4x36ywcqyor"]
+
+[ext_resource type="Texture2D" uid="uid://c60l2yhgl4ul4" path="res://assets/images/tiles/floor.png" id="1_5j3ic"]
+
+[resource]
+albedo_texture = ExtResource("1_5j3ic")
+metallic_texture = ExtResource("1_5j3ic")
+uv1_scale = Vector3(100, 100, 100)
+uv2_scale = Vector3(2, 2, 2)
+grow = true

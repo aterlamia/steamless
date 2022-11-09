@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://ct6lg1ymjfhbm"]
+
+[ext_resource type="Texture2D" uid="uid://15ip14fpkijk" path="res://assets/images/models/textures/00963-DDIM-20-7-3054338402.png" id="1_cmglj"]
+
+[resource]
+albedo_color = Color(0.290196, 0.337255, 0.341176, 1)
+albedo_texture = ExtResource("1_cmglj")
+roughness = 0.0
+uv1_scale = Vector3(100, 1, 1)
+uv1_triplanar_sharpness = 0.450625

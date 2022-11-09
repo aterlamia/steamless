@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://crqeft27xt5ty"]
+
+[ext_resource type="Script" path="res://src/player/player.gd" id="1_vlouo"]
+[ext_resource type="PackedScene" uid="uid://f0mc1h0avwfw" path="res://resources/models/playermodel.tscn" id="2_exk25"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_phg63"]
+custom_solver_bias = 0.499
+radius = 0.441992
+height = 2.02822
+
+[node name="player" type="CharacterBody3D"]
+script = ExtResource("1_vlouo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.743935, 0.0148982, 0.930097, -0.0149674)
+shape = SubResource("CapsuleShape3D_phg63")
+
+[node name="CameraController" type="Node3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="CameraController"]
+transform = Transform3D(-1, -7.11723e-08, 5.07667e-08, -4.77379e-08, 0.931037, 0.364926, -7.32382e-08, 0.364926, -0.931037, -0.142189, 2.61776, -3.93773)
+current = true
+size = 4.0
+
+[node name="PlayerModel" parent="." instance=ExtResource("2_exk25")]
+
+[node name="ActionFinder" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0521451, 0.607543, 0.277773)
+target_position = Vector3(0, 0, 1)
+collide_with_areas = true
+debug_shape_custom_color = Color(1, 0, 0, 1)
+
+[node name="CurbCheckerBottom" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0325968, 0.110935, 0.17131)
+target_position = Vector3(0, 0, 0.4)
+
+[node name="CurbCheckerTop" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0157689, 0.551789, 0.17131)
+target_position = Vector3(0, 0, 1)

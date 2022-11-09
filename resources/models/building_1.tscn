@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://xjpef1l80nxx"]
+
+[ext_resource type="PackedScene" uid="uid://bnqoh322apssg" path="res://assets/models/Buildings/build1.blend" id="1_go08d"]
+
+[node name="Building1" instance=ExtResource("1_go08d")]
+
+[node name="Buildings" parent="." index="0"]
+transform = Transform3D(-1.5, 0, -1.16824e-07, 0, 1.5, 0, 5.84122e-07, 0, -0.3, 0, 0, 0)

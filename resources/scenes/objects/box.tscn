@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://bvh60dtv4cadm"]
+
+[ext_resource type="Texture2D" uid="uid://ul31m2eyqkoj" path="res://assets/images/models/textures/01046-DDIM-20-7-951941573.png" id="1_3t2o5"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ewwy6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_amdks"]
+albedo_color = Color(0.572549, 0.443137, 0.494118, 1)
+albedo_texture = ExtResource("1_3t2o5")
+uv1_scale = Vector3(0.2, 0.2, 0.2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wrg5i"]
+
+[node name="Box" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.2468, 0.87872, -56.6822)
+mesh = SubResource("BoxMesh_ewwy6")
+surface_material_override/0 = SubResource("StandardMaterial3D_amdks")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_wrg5i")

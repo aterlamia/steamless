@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://clf7su2q4rge1"]
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+offset_left = 375.0
+offset_top = 212.0
+offset_right = 703.0
+offset_bottom = 264.0
+text = "Welcome to this new project
+Change this title screen however you want"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+offset_left = 460.0
+offset_top = 357.0
+offset_right = 605.0
+offset_bottom = 414.0
+text = "Start"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

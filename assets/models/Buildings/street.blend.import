@@ -1,0 +1,126 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://i7nu60q2hssj"
+path="res://.godot/imported/street.blend-0d53bf95b1758eda936777df207bf4b0.scn"
+
+[deps]
+
+source_file="res://assets/models/Buildings/street.blend"
+dest_files=["res://.godot/imported/street.blend-0d53bf95b1758eda936777df207bf4b0.scn"]
+
+[params]
+
+nodes/root_type="Node3D"
+nodes/root_name="Scene Root"
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+import_script/path=""
+_subresources={
+"nodes": {
+"PATH:10012": {
+"generate/physics": true
+},
+"PATH:20012": {
+"generate/physics": true
+},
+"PATH:30012": {
+"generate/physics": true
+},
+"PATH:40012": {
+"generate/physics": true
+},
+"PATH:Cube": {
+"generate/physics": true
+},
+"PATH:Lamp": {
+"import/skip_import": true
+},
+"PATH:Lamp001/streetlights0012": {
+"generate/physics": true
+},
+"PATH:Lamp002/streetlights0013": {
+"generate/physics": true
+},
+"PATH:Lamp003/streetlights0014": {
+"generate/physics": true
+},
+"PATH:Lamp004/streetlights0015": {
+"generate/physics": true
+},
+"PATH:Lamp005/streetlights0016": {
+"generate/physics": true
+},
+"PATH:Lamp006/streetlights0017": {
+"generate/physics": true
+},
+"PATH:Lamp007/streetlights0018": {
+"generate/physics": true
+},
+"PATH:Lamp008/streetlights0019": {
+"generate/physics": true
+},
+"PATH:Plane": {
+"generate/physics": true
+},
+"PATH:SmallHouse": {
+"generate/physics": true
+},
+"PATH:big house": {
+"generate/physics": true
+},
+"PATH:factory": {
+"generate/physics": true
+},
+"PATH:sidewalk2": {
+"generate/physics": true
+},
+"PATH:sidewalk3": {
+"generate/physics": true
+},
+"PATH:sidwalk1": {
+"generate/physics": true
+},
+"PATH:stairscollision001/1001": {
+"generate/physics": true
+},
+"PATH:stairscollision001/2001": {
+"generate/physics": true
+},
+"PATH:stairscollision001/3001": {
+"generate/physics": true
+},
+"PATH:stairscollision001/4001": {
+"generate/physics": true
+},
+"PATH:tower": {
+"generate/physics": true
+}
+}
+}
+blender/nodes/visible=0
+blender/nodes/punctual_lights=true
+blender/nodes/cameras=true
+blender/nodes/custom_properties=true
+blender/nodes/modifiers=1
+blender/meshes/colors=false
+blender/meshes/uvs=true
+blender/meshes/normals=true
+blender/meshes/tangents=true
+blender/meshes/skins=2
+blender/meshes/export_bones_deforming_mesh_only=false
+blender/materials/unpack_enabled=true
+blender/materials/export_materials=1
+blender/animation/limit_playback=true
+blender/animation/always_sample=true
+blender/animation/group_tracks=true
